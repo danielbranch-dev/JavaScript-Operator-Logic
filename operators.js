@@ -18,9 +18,10 @@ x = z=s=r=t=0;
 
 
 
-/*JavaScript operators also have Logical operators. And = &&, OR = ||, NOT = ! */
+/*JavaScript operators also have Logical operators. And = &&, OR = ||, NOT = !, Conditional = ? */
 
 /* OR Operator */
+
 
 /* The program below returns the users preferred favourite icecream, Or vanilla is assigned to the favouriteIcecream variable */
 
@@ -37,3 +38,12 @@ if (!isRegistered) { alert ("Register now!"); }
 /* True, I like Vanilla IceCream */
 !!"I like Vanilla IceCream"; // Returns true,
 
+
+/*Conditional "ternary" Operator*/
+/*The program below prompts the user for their age in order to determine alcohol consumption eligibility*/
+/*It is important to note that using the "?" operator, we can display the first message if the expression evaluates to true, else alert the second message*/
+const userAge = parseInt(prompt("What is your age?"));
+const legalAge = 21;
+
+const message = userAge < 21 ? ("You are under the drinking age") : ("You are old enough to drink alcohol");
+alert(message);
